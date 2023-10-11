@@ -6,7 +6,7 @@ public class Segitiga07 {
 
         int sudut1, sudut2, sudut3, totalSudut;
         
-        System.out.println("Sudut 1");
+        System.out.print("Sudut 1");
         sudut1=sc.nextInt();
 
         System.out.println("Sudut 2");
@@ -16,14 +16,17 @@ public class Segitiga07 {
         sudut3=sc.nextInt();
 
         totalSudut = sudut1 + sudut2 + sudut3;
-        
+
         if (totalSudut == 180) {
             if ((sudut1 == 90) || (sudut2 ==90) || (sudut3 == 90))
                 System.out.println("Segitiga tersebut adalah segitiga siku-siku");
-            else
-                System.out.println("Segitiga tersebut adalah bukan segitiga siku-siku");
-
-        } else
+            else if(sudut1 == sudut2 && sudut1 == sudut3)
+            System.out.println("Segitiga tersebut adalah segitiga sama sisi");
+            else if((sudut1 == sudut2) || (sudut1 == sudut3) || (sudut2 == sudut3))
+            System.out.println("segitiga tersebut adalah segitiga sama kaki");
+            else if(sudut1 != sudut2 && sudut1 != sudut3)
+            System.out.println("Segitiga tersebut adalah segitiga sembbarang");
+          } else
                 System.out.println("Bukan Segitiga");
         }
     }
