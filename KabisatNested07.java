@@ -14,7 +14,7 @@ KabisatNested07{
 
         } else if ((tahun % 100)== 0){
             System.out.println("Bukan Tahun Kabisat");
-        } else if ((tahun %4) ==0){
+        } else if ((tahun % 4) ==0){
         System.out.println("Tahun Kabisat");  
         }else
         System.out.println("Bukan Tahun Kabisat");      
